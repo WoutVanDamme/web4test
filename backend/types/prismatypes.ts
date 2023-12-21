@@ -1,0 +1,1 @@
+export{ Prisma, BlogPost as BlogPostPrisma, Tag as TagPrisma, User as UserPrisma, BlogComment as BlogCommentPrisma, Penalty as PenaltyPrisma } from '@prisma/client';
