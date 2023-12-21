@@ -6,10 +6,14 @@ import swaggerJSDoc from "swagger-jsdoc";
 import swaggerUi from "swagger-ui-express";
 import { expressjwt } from "express-jwt";
 
+import helmet from "helmet";
+
 const app = express();
 
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(helmet());
 
+
+app.use(bodyParser.urlencoded({ extended: true }));
 dotenv.config();
 const port = process.env.APP_PORT || 3000;
 
